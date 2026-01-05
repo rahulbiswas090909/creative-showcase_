@@ -57,6 +57,11 @@ creative-showcase/
 
 ---
 
+🌍 Live Demo
+
+🚀 Deployed on Netlify:
+👉 https://creativerahul.netlify.app/
+
 ## ⚙️ How to Run
 
 1. Clone or download the repository  
