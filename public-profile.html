@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - Creative Showcase</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">Creative Showcase</a></div>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="public-profile-container">
+      <section class="profile-header">
+        <h1 id="profileUsername"></h1>
+        <p id="profileStats"></p>
+      </section>
+
+      <section class="gallery-section">
+        <div id="userGallery" class="masonry-grid">
+          <!-- User's public images will be loaded dynamically -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Creative Showcase. All rights reserved.</p>
+    </footer>
+
+    <script src="js/public-profile.js"></script>
+  </body>
+</html>

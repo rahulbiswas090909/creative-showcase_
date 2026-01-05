@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - Creative Showcase</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">Creative Showcase</a></div>
+        <div class="nav-buttons">
+          <span id="usernameDisplay" class="username-display"></span>
+          <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <h1>My Dashboard</h1>
+
+      <section class="upload-section">
+        <h2>Upload New Artwork</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="imageTitle">Title</label>
+            <input type="text" id="imageTitle" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="imageDescription">Description (optional)</label>
+            <textarea
+              id="imageDescription"
+              name="description"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="imageFile">Choose Image</label>
+            <input
+              type="file"
+              id="imageFile"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </section>
+
+      <section class="my-images-section">
+        <h2>My Artworks</h2>
+        <div id="myImagesGrid" class="image-grid">
+          <!-- User's images will be loaded dynamically -->
+        </div>
+      </section>
+    </main>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>
